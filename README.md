@@ -1,24 +1,107 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h1 align="center"> Members-only</h1>
+  <p align="center">
+      Creating an application with the backend needed to store the information from users and posts with focus on the authentication, if the author is authenticate can see who wrote each post... See it in action!!!
+    <br />
+    <a href="https://github.com/Davidosky007/Members-only"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Davidosky007/Members-only">View Demo</a>
+    ·
+    <a href="https://github.com/Davidosky007/members_only/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Davidosky007/members_only/issues">Request Feature</a>
+  </p>
+</p>
 
-Things you may want to cover:
+## Table of Contents
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Future Feature](#future-feature)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+<!-- ABOUT THE PROJECT -->
 
-* Ruby version
+## About The Project
 
-* System dependencies
+<small>(Click in the image go to the finish product, remember to sign up to see the authors of the posts! 
+  See instructions to test and see the code [Usage](#usage))</small>
+[![Product Name Screen Shot][product-example]](https://floating-sierra-41285.herokuapp.com/)
 
-* Configuration
+In this project we developed a simple app with authentication:
+* The form uses Materialize library for css combined with embedded ruby code
+* The back end is set up with a User and Post model that validates presence of username, email and password, using devise gem and validates the presence of Post's description.
+* We use devise to perform user's authentication, creating the corresponding actions such as Log in, Log out,Sign up.
+* If you check the page without being authenticated, you will not be able to see the post's authors and the timestamps from the posts, but it displays when you Log in or Sign up. 
+* You can create your own posts.
+* When you sign in or up, the application provides an image from gravatar api. 
+* This app pops up notification via flash messages.
+* For a better user experience, the application posts are paginated. 
 
-* Database creation
+### Built With
 
-* Database initialization
+The project was developed using the following technologies:
 
-* How to run the test suite
+- [RUBY](https://www.ruby-lang.org/es/)
+- [RUBOCOP LINTERN](https://github.com/microverseinc/linters-config/tree/master/ruby)
+- [RAILS](https://rubyonrails.org/)
+- [Materialize library](https://materializecss.com/)
+- [DEVISE GEM](https://github.com/heartcombo/devise)
+- [WILL PAGINATE](https://rubygems.org/gems/will_paginate/versions/3.1.0?locale=es)
 
-* Services (job queues, cache servers, search engines, etc.)
+## Future Feature
 
-* Deployment instructions
+* Dropdown menu
 
-* ...
+## Usage
+
+* Click the image to start using the virtual workspace:
+[![Product Name Screen Shot][product-screenshot]]
+* Type in the terminal `bundle install`
+* Then `yarn install --check-files`
+* Run  `rails db:migrate`
+* Now you can use the `rails console` to interact with the database or see the direct page working on
+
+Now you can test directly in the browser!!
+
+## Roadmap
+
+See the [open issues](https://github.com/Davidosky007/members_only/issues) for a list of proposed features (and known issues).
+
+## Contact
+
+<p align="center">
+
+  Project Link: [https://github.com/Davidosky007/members_only]
+
+<p align="center">
+
+  David Bassey - [Github user: David Bassey](https://github.com/Davidosky007)
+</p>
+<p align="center" style="display: flex; justify-content: center; align-items: center;">
+    <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=davidosky1@gmail.com">
+      davidosky1@gmail.com
+    </a> &nbsp; |
+    <a target="_blank" href="https://github.com/Davidosky007?tab=repositories">
+        Portfolio
+    </a> &nbsp; |
+    <a target="_blank" href="https://www.linkedin.com/in/david-bassey-akan">
+      LinkedIn
+    </a> &nbsp; |
+    <a target="_blank" href="https://twitter.com/Davidosky2">
+      Twitter
+    </a>
+</p>
+
+## Acknowledgements
+
+- [Microverse curriculum Rails section](https://www.microverse.org/?grsf=6ns691)
+- [The Odin project: Authentication](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication)
+- [Rails Guides](https://guides.rubyonrails.org)
+- [Materialize library](https://materializecss.com/)
