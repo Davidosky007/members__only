@@ -24,8 +24,10 @@
         <td><%= post.body %></td>
         <td> <%= user_status_member_name post %> </td>
         <td><%= link_to 'Show' , post, class: 'btn btn-primary' %></td>
+        <% if post.user == current_user%>
         <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-dark' %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        <%end%>
       </tr>
     <% end %>
   </tbody>

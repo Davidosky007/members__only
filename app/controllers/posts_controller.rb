@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, except: %i[index show]
   before_action :set_post, only: %i[show edit update destroy]
+  before_action :require_same_user, only: %i[edit update destroy]
 
   # GET /posts
   # GET /posts.json
@@ -71,5 +72,12 @@ class PostsController < ApplicationController
   # Only allow a list of trusted parameters through.
   def post_params
     params.require(:post).permit(:title, :body)
+  end
+
+  def require_same_user
+    return if @post.user == current_user
+
+    flash[:alert] = 'you can edit and  delete only your own post'
+    redirect_to root_path
   end
 end
