@@ -1,12 +1,9 @@
 
 <div class="row d-flex flex-column text-white px-4 theme-bg border-rad-1">
-  <div class="border-bottom border-light pb-4">
-    <%= render partial: 'form' if user_signed_in? %>
-  </div>
-  <h3>Posts: <%= @posts.count%></h3>
+<h1 class="text-dark">Posts</h1> <br>
+  <h3 class="text-dark">Total Posts is: <%= @posts.count%></h3>
   <div>
 
-<h1>Posts</h1>
 
 <div class="table-responsive">
 
@@ -15,6 +12,7 @@
     <tr>
       <th>Title</th>
       <th>Body</th>
+      <th>Author's Email</th>
       <th colspan="4"></th>
     </tr>
   </thead>

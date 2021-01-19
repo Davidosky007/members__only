@@ -35,12 +35,12 @@
 [![Product Name Screen Shot][product-example]](https://floating-sierra-41285.herokuapp.com/)
 
 In this project we developed a simple app with authentication:
-* The form uses Materialize library for css combined with embedded ruby code
+* The form uses bootstrap for css combined with embedded ruby code
 * The back end is set up with a User and Post model that validates presence of username, email and password, using devise gem and validates the presence of Post's description.
 * We use devise to perform user's authentication, creating the corresponding actions such as Log in, Log out,Sign up.
 * If you check the page without being authenticated, you will not be able to see the post's authors and the timestamps from the posts, but it displays when you Log in or Sign up. 
 * You can create your own posts.
-* When you sign in or up, the application provides an image from gravatar api. 
+* When you sign in or up, the application provides the posts available 
 * This app pops up notification via flash messages.
 * For a better user experience, the application posts are paginated. 
 
@@ -104,4 +104,4 @@ See the [open issues](https://github.com/Davidosky007/members_only/issues) for a
 - [Microverse curriculum Rails section](https://www.microverse.org/?grsf=6ns691)
 - [The Odin project: Authentication](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication)
 - [Rails Guides](https://guides.rubyonrails.org)
-- [Materialize library](https://materializecss.com/)
+- [Bootstrap library](https://getbootstrap.com/docs/5.0/utilities/colors/#dealing-with-specificity)
