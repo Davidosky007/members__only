@@ -1,6 +1,6 @@
 module PostsHelper
   def user_status_member_name(post)
-    user_signed_in? ? post.user.name : 'Anonymous'
+    user_signed_in? ? post.user.email : 'Anonymous'
   end
 
   def show_time(post)
