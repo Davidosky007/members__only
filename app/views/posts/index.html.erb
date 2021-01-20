@@ -1,0 +1,41 @@
+
+<div class="row d-flex flex-column text-white px-4 theme-bg border-rad-1">
+<h1 class="text-dark">Posts</h1> <br>
+  <h3 class="text-dark">Total Posts is: <%= @posts.count%></h3>
+  <div>
+
+
+<div class="table-responsive">
+
+<table class=" table table-bordered" >
+  <thead class="table-light">
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Author's Email</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %></td>
+        <td><%= post.body %></td>
+        <td> <%= user_status_member_name post %> </td>
+        <td><%= link_to 'Show' , post, class: 'btn btn-primary' %></td>
+        <% if post.user == current_user%>
+        <td><%= link_to 'Edit', edit_post_path(post), class: 'btn btn-dark' %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %></td>
+        <%end%>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+</div>
+
+<br>
+
+<%= link_to 'New Post', new_post_path, class: 'btn btn-primary' %>
