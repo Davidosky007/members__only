@@ -37,8 +37,7 @@
 
 <small>(Click in the image go to the finish product, remember to sign up to see the authors of the posts! 
   See instructions to test and see the code [Usage](#usage))</small>
-[![Product Name Screen Shot][product-example]](https://floating-sierra-41285.herokuapp.com/)
-
+[![Product Name Screen Shot][product-example]]
 In this project we developed a simple app with authentication:
 * The form uses bootstrap for css combined with embedded ruby code
 * The back end is set up with a User and Post model that validates presence of username, email and password, using devise gem and validates the presence of Post's description.
